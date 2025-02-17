@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = creddentials('ilchevst-dockerhub')
+        DOCKERHUB_CREDENTIALS = credentials('ilchevst-dockerhub')
     }
     stages {
         stage('gitclone') {
